@@ -1,0 +1,199 @@
+/*FONTS IMPORTADAS*/
+@font-face {
+    font-family: 'Red Hat Medium';
+    src: url(fonts/RedHatDisplay-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Red Hat Bold';
+    src: url(fonts/RedHatDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Red Hat Black';
+    src: url(fonts/RedHatDisplay-Black.ttf);
+}
+
+/*GENERAL STYLES*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+}
+
+/*CONTENT*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+    /*CARD BLOCK*/
+    .card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+
+        width: 450px;
+        height: 700px;
+        border-radius: 20px;
+        background: white;
+    }
+
+        /*CARD IMAGE*/
+        .card-img{
+            width: 100%;
+            height: 31.5%;
+        }
+
+            .card-img img{
+                border-radius: 20px 20px 0px 0px;
+            }
+
+        /*INFO BLOCK*/
+        .card-info{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 69.5%;
+        }
+
+            /*TITLE*/
+            .title{
+                width: 78%;
+                height: 10%;
+                margin-top: 2%;
+                margin-bottom: 5%;
+
+                font-family: 'Red Hat Black';
+                color: #192A4E;
+                text-align: center;
+            }
+
+            /*INFO BLOCK*/
+            .order-info{
+                width: 78%;
+                height: 15%;
+                margin-bottom: 5%;
+
+                font-family: 'Red Hat Medium';
+                color:  #858aa0;
+                text-align: center;
+            }
+
+            /*PLAN BLOCK*/
+            .plan{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: center;
+
+                width: 78%;
+                height: 20%;
+                margin-bottom: 5%;
+                border-radius: 12px;
+                background:   hsl(225, 100%, 98%);
+            }
+
+                .plan-img{
+                    margin-left: 5.5%;
+                }
+
+                .plan-info{
+                    height: 55%;
+                    margin-left: 5.5%;
+                }
+
+                .plan-info p:nth-child(1){
+                    width: 100%;
+                    height: 50%;
+
+                    font-family: 'Red Hat Bold';
+                    color:#192A4E;
+                }
+
+                .plan-info p:nth-child(2){
+                    width: 100%;
+                    height: 50%;
+
+                    font-family: 'Red Hat Medium';
+                    color:#858aa0;
+                }
+
+                .plan-change{
+                    height: 55%;
+                    margin-left: 30%;
+                }
+
+                .plan-change p{
+                    width: 100%;
+                    height: 50%;
+                    margin-top: 25%;
+                    margin-bottom: 25%;
+
+                    font-family: 'Red Hat Bold';
+                    color:#382cbd;
+                }
+
+                .plan-change p:hover{
+                    cursor: pointer;
+                    color: #685fd1;
+                }
+
+            /*PAYMENT BLOCK*/
+            .payment{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                width: 78%;
+                height: 20%;
+            }
+
+                .confirm{
+                    width: 100%;
+                    height: 55%;
+                    margin-bottom: 5%;
+                    border-radius: 10px;
+                    border: transparent;
+                    background: #382AE1;
+
+                    font-family: 'Red Hat Bold';
+                    font-size: 16px;
+                    color:white;
+
+                    transition: all 100ms;
+
+                }
+
+                .confirm:hover{
+                    background: #685fd1;
+                    cursor: pointer;
+                    box-shadow: 1px 1px 5px 0.5px #3123cc;
+                }
+
+                .payment span{
+                    font-family: 'Red Hat Bold';
+                    color:#192A4E;
+                }
+
+                .payment span:hover{
+                    cursor: pointer;
+                    color: black;
+                }
